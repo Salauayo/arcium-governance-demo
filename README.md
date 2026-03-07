@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+ARCIUM PRIVATE DAO VOTING DEMO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ OVERVIEW
+This project is a prototype private governance voting application inspired by confidential compute principles. The goal is to demonstrate how governance systems can protect voter privacy by treating votes as encrypted signals and only revealing aggregated results.
 
-Currently, two official plugins are available:
+ TECHNOLOGY STACK
+- React + TypeScript frontend
+- Solana Devnet smart contract deployment
+- Anchor framework
+- wallet connection
+- Vercel cloud hosting
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ PRIVACY CONCEPT
+Traditional DAO governance systems expose individual votes publicly.
+This prototype demonstrates a privacy-first governance model where:
+- Votes are treated as confidential inputs
+- Individual votes are hidden
+- Only final tally results are revealed
+This design aligns with confidential compute philosophy.
 
-## React Compiler
+Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend Application:
+https://arcium-governance-demo.vercel.app
 
-## Expanding the ESLint configuration
+PROGRAM DEPLOYMENT
+Solana Devnet Program ID:
+HfpjgyQuSuXgzA2Vt9M2A5XWtipVCnuMqsnRBehXwM3g
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+HOW TO RUN LOCALLYy;
+Clone repository
+git clone https://github.com/salauayo/arcium-governance-demo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Navigate to frontend folder
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+cd app
+npm install
+npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Open browser:
+
+
+http://localhost:5173
+
+
+---
+
+## Future Improvements
+
+- Real Arcium confidential compute SDK integration
+- Zero knowledge proof voting verification
+- Multi-proposal governance system
+- Token-weighted governance voting
