@@ -1,16 +1,16 @@
 ARCIUM PRIVATE DAO VOTING DEMO
 
- OVERVIEW
+ OVERVIEW:
 This project is a prototype private governance voting application inspired by confidential compute principles. The goal is to demonstrate how governance systems can protect voter privacy by treating votes as encrypted signals and only revealing aggregated results.
 
- TECHNOLOGY STACK
+ TECHNOLOGY STACK;
 - React + TypeScript frontend
 - Solana Devnet smart contract deployment
 - Anchor framework
 - wallet connection
 - Vercel cloud hosting
 
- PRIVACY CONCEPT
+ PRIVACY CONCEPT;
 Traditional DAO governance systems expose individual votes publicly.
 This prototype demonstrates a privacy-first governance model where:
 - Votes are treated as confidential inputs
@@ -18,7 +18,8 @@ This prototype demonstrates a privacy-first governance model where:
 - Only final tally results are revealed
 This design aligns with confidential compute philosophy.
 
-Live Demo
+FRONTPAGE: <img width="645" height="755" alt="image" src="https://github.com/user-attachments/assets/30fc9873-f5b0-4d63-87a7-5022ab179714" />
+
 
 Frontend Application:
 https://arcium-governance-demo.vercel.app
