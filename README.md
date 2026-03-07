@@ -51,3 +51,28 @@ HfpjgyQuSuXgzA2Vt9M2A5XWtipVCnuMqsnRBehXwM3g
 
 Clone repository
 
+git clone https://github.com/salauayo/arcium-governance-demo
+
+
+Navigate to frontend folder
+
+
+cd app
+npm install
+npm run dev
+
+
+Open browser:
+
+
+http://localhost:5173
+
+
+---
+
+## Future Improvements
+
+- Real Arcium confidential compute SDK integration
+- Zero knowledge proof voting verification
+- Multi-proposal governance system
+- Token-weighted governance voting
