@@ -35,7 +35,8 @@ This design aligns with confidential compute philosophy.
 ## Live Demo
 
 Frontend Application:
-https://arcium-governance-demo.vercel.app
+https://arcium-governance-demo.vercel.app <img width="645" height="755" alt="image" src="https://github.com/user-attachments/assets/427ecaf3-4d80-477b-97bc-df1b25df5e73" />
+
 
 ---
 
