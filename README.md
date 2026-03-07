@@ -10,7 +10,7 @@ This project is a prototype private governance voting application inspired by co
 - wallet connection
 - Vercel cloud hosting
 
- PRIVACY CONCEPT;
+ PRIVACY CONCEPT:
 Traditional DAO governance systems expose individual votes publicly.
 This prototype demonstrates a privacy-first governance model where:
 - Votes are treated as confidential inputs
